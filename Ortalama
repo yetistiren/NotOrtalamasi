@@ -1,0 +1,39 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner dersler = new Scanner(System.in);
+
+        int mat, fizik, kimya, turkce, tarih, muzik,toplam;
+        double ort;
+
+        System.out.print("Matematik Notunuzu Giriniz :");
+        mat = dersler.nextInt();
+
+        System.out.print("Fizik Notunuzu Giriniz : ");
+        fizik = dersler.nextInt();
+
+        System.out.print("Kimya Notunuzu Giriniz : ");
+        kimya = dersler.nextInt();
+
+        System.out.print("Türkçe Notunuzu Giriniz :");
+        turkce = dersler.nextInt();
+
+        System.out.print("Tarih Notunuzu Giriniz :");
+        tarih = dersler.nextInt();
+
+        System.out.print("Müzik Notunuzu Giriniz :");
+        muzik = dersler.nextInt();
+
+        toplam = mat + fizik + kimya + turkce + tarih + muzik;
+        ort = toplam / 6;
+
+        System.out.println("Not Ortalamanız : " + ort);
+
+        System.out.println(ort > 60 ? "Sınıfı Geçti" : "Sınıfta Kaldı");
+    }
+}
